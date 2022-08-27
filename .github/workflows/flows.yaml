@@ -3,6 +3,11 @@ name: Testing Workflows
 
 on:
   workflow_dispatch:
+    inputs:
+      someInput:
+        type: boolean
+        required: false
+        description: Executar job2?
     
 jobs:
   job1:
@@ -12,6 +17,7 @@ jobs:
 
   job2:
     runs-on: ubuntu-latest
+    if: ${{ inputs.someInput }}
     needs: job1
     steps:
       - run: echo job2
