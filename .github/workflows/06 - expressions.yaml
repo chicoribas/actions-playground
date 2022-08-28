@@ -13,6 +13,10 @@ on:
         required: false
         default: false
         description: Should I test?
+      runJob2: # <==
+        type: string
+        required: false
+        description: Input job2 to run job 2
     
 jobs:
   job1:
@@ -22,6 +26,7 @@ jobs:
 
   job2:
     runs-on: ubuntu-latest
+    if: ${{ inputs.runJob2 == 'job2' }} # < ==
     needs: job1
     steps:
       - run: echo job2
