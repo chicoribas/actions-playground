@@ -11,7 +11,7 @@ on:
       runJob2: # <==
         type: boolean
         required: false
-        default: true
+        default: false
         description: Should I run job2?
     
 jobs:
