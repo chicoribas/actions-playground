@@ -13,4 +13,4 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ echoMessage }}
+      - run: echo ${{ inputs.echoMessage }}
