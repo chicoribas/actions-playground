@@ -8,11 +8,11 @@ on:
         type: string
         required: false
         description: What should I echo?
-      runJob2:
+      test:
         type: boolean
         required: false
         default: false
-        description: Should I run job2?
+        description: Should I test?
     
 jobs:
   job1:
@@ -47,6 +47,7 @@ jobs:
 
   testing:
     runs-on: ubuntu-latest
+    if: ${{ inputs.test }}
     needs: job1
     environment: test # <==
     steps:
