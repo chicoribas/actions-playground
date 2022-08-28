@@ -1,0 +1,19 @@
+{
+  "name": "actions-playground",
+  "version": "1.0.0",
+  "description": "Repo para playground com actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo testing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicoribas/actions-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chicoribas/actions-playground/issues"
+  },
+  "homepage": "https://github.com/chicoribas/actions-playground#readme"
+}
