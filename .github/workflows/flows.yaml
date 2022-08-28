@@ -31,4 +31,4 @@ jobs:
     runs-on: ubuntu-latest
     needs: [job1, job3]
     steps:
-      - run: echo job4
+      - run: ${{ secrets.GITHUB_TOKEN }}
